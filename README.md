@@ -62,7 +62,7 @@ git commit -m "BOJ_1000_홍길동_add"
 
 |날짜|개념|알고리즘 문제|문제번호|
 |:---:|:---:|:---:|:---:|
-|1주차(2025-10-15)|입출력|2048 (Easy), 진우의 민트초코우유, Maximal Rectangle|BOJ_12100, BOJ_20208, LC_85|
+|1주차(2025-10-15)|입출력|2048 (Easy), 진우의 민트초코우유, Maximal Rectangle|[BOJ_12100](https://www.acmicpc.net/problem/12100), [BOJ_20208](https://www.acmicpc.net/problem/20208), [LC_85](https://leetcode.com/problems/maximal-rectangle/description/)|
 
 ## 💖 참고사항
 
@@ -70,13 +70,13 @@ git commit -m "BOJ_1000_홍길동_add"
 1. 원하는 디렉토리에 clone해서 다운받습니다. 
 
 ```bash
-$ git clone https://github.com/Trailblazer-Yoo/Algorithm_Study
+$ git clone https://github.com/thkyang324/SCLabAlgorithmStudy
 ```
 
 2. `git remote add <원격저장소 이름> <주소>` 형식으로 작성합니다.
 
 ```bash
-$ git remote add algorithmStudy https://github.com/Trailblazer-Yoo/Algorithm_Study
+$ git remote add algorithmStudy https://github.com/thkyang324/SCLabAlgorithmStudy
 ```
 
 ### 💕 원격 저장소 조회
