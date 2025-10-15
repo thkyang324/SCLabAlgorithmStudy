@@ -30,7 +30,7 @@
 
 ```
 $ git pull <remote 이름> <브랜치이름>
-$ git pull AlgorithmStudy master
+$ git pull SCLabAlgorithmStudy master
 ```
 
 2. 파일 업로드 규칙에 맞게 push해주세요.
@@ -58,11 +58,11 @@ git commit -m "BOJ_1000_홍길동_add"
 
 ## 📆 알고리즘 스터디 기록
 
-### 🐱 백준
+### 🐱 주차 별 문제
 
 |날짜|개념|알고리즘 문제|문제번호|
 |:---:|:---:|:---:|:---:|
-|1주차(3.10)|입출력|별 찍기, 문자열 반복, 크로아티아 알파벳, 팰린드롬, 크로스워드 만들기|BOJ_10995, BOJ_2675, BOJ_2941, BOJ_8892, BOJ_2804|
+|1주차(2025-10-15)|입출력|2048 (Easy), 진우의 민트초코우유, Maximal Rectangle|BOJ_12100, BOJ_20208, LC_85|
 
 ## 💖 참고사항
 
@@ -85,5 +85,5 @@ $ git remote add algorithmStudy https://github.com/Trailblazer-Yoo/Algorithm_Stu
 `git remote -v`로 등록이 잘 됐는지 확인해봅니다.
 ```
 $ git remote -v
-algorithmStudy https://github.com/Trailblazer-Yoo/Algorithm_Study (fetch)
-algorithmStudy https://github.com/Trailblazer-Yoo/Algorithm_Study (push)
+algorithmStudy https://github.com/thkyang324/SCLabAlgorithmStudy (fetch)
+algorithmStudy https://github.com/thkyang324/SCLabAlgorithmStudy (push)
