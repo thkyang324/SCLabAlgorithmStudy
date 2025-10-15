@@ -60,9 +60,32 @@ git commit -m "BOJ_1000_홍길동_add"
 
 ### 🐱 주차 별 문제
 
-|날짜|개념|알고리즘 문제|문제번호|
+|주차 및 날짜|출제자|문제(문제 번호)|유형|
 |:---:|:---:|:---:|:---:|
-|1주차(2025-10-15)|입출력|2048 (Easy), 진우의 민트초코우유, Maximal Rectangle|[BOJ_12100](https://www.acmicpc.net/problem/12100), [BOJ_20208](https://www.acmicpc.net/problem/20208), [LC_85](https://leetcode.com/problems/maximal-rectangle/description/)|
+|1주차(2025-10-15)
+|-|태훈|2048 (Easy)([BOJ_12100](https://www.acmicpc.net/problem/12100))|BLIND|
+|-|진명|진우의 민트초코우유([BOJ_20208](https://www.acmicpc.net/problem/20208))|BLIND|
+|-|민혁|Maximal Rectangle([LC_85](https://leetcode.com/problems/maximal-rectangle/description/))|BLIND|
+|2주차(2025-10-22)
+|-|태훈||BLIND|
+|-|진명||BLIND|
+|-|민혁||BLIND|
+|-|준영||BLIND|
+|3주차(2025-10-29)
+|-|태훈||BLIND|
+|-|진명||BLIND|
+|-|민혁||BLIND|
+|-|준영||BLIND|
+|4주차(2025-11-05)
+|-|태훈||BLIND|
+|-|진명||BLIND|
+|-|민혁||BLIND|
+|-|준영||BLIND|
+|5주차(2025-11-12)
+|-|태훈||BLIND|
+|-|진명||BLIND|
+|-|민혁||BLIND|
+|-|준영||BLIND|
 
 ## 💖 참고사항
 
