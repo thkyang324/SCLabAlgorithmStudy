@@ -1,7 +1,7 @@
 import sys
-from copy import deepcopy
 
 input=sys.stdin.readline
+MOVE_LIMIT = 10
 
 def show_arr(arr):
     print("*"*100)
@@ -63,14 +63,30 @@ def reduce_fn_list(board, fn_list):
         board = fn(board)
     return board
 
+def is_stop(board):
+    numset = set()
+    for i in range(len(board)):
+        for j in range(len(board[0])):
+            if board[i][j] not in numset:
+                numset.add(board[i][j])
+            else:
+                return False
+    return True
+
 def main():
     _, input_board = parse_input()
 
     def dfs(cnt, board):
-        board = deepcopy(board)
-        if cnt == 5:
-            return max(map(max, board))
-        return max([dfs(cnt+1, reduce_fn_list(board, move_fn_list[i])) for i in range(4)])
+        curmax = max(map(max, board))
+
+        if cnt == MOVE_LIMIT:
+            return curmax
+                
+        for i in range(4):
+            next_board = reduce_fn_list(board, move_fn_list[i])
+            if next_board != board and not is_stop(board):
+                curmax = max(curmax, dfs(cnt+1, next_board))
+        return curmax
     
     print(dfs(0, input_board))
 

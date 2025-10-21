@@ -67,7 +67,7 @@ git commit -m "BOJ_1000_홍길동_add"
 |-|진명|진우의 민트초코우유([BOJ_20208](https://www.acmicpc.net/problem/20208))|BLIND|
 |-|민혁|Maximal Rectangle([LC_85](https://leetcode.com/problems/maximal-rectangle/description/))|BLIND|
 |2주차(2025-10-22)
-|-|태훈||BLIND|
+|-|태훈|불켜기([BOJ_11967](https://www.acmicpc.net/problem/11967))|BLIND|
 |-|진명||BLIND|
 |-|민혁||BLIND|
 |-|준영||BLIND|
