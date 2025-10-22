@@ -70,7 +70,7 @@ git commit -m "BOJ_1000_홍길동_add"
 |-|태훈|불켜기([BOJ_11967](https://www.acmicpc.net/problem/11967))|BLIND|
 |-|진명||BLIND|
 |-|민혁||BLIND|
-|-|준영||BLIND|
+|-|준영|K-Queen([BOJ_26006](https://www.acmicpc.net/problem/26006))|BLIND|
 |3주차(2025-10-29)
 |-|태훈||BLIND|
 |-|진명||BLIND|
