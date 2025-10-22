@@ -68,7 +68,7 @@ git commit -m "BOJ_1000_홍길동_add"
 |-|민혁|Maximal Rectangle([LC_85](https://leetcode.com/problems/maximal-rectangle/description/))|BLIND|
 |2주차(2025-10-22)
 |-|태훈|불켜기([BOJ_11967](https://www.acmicpc.net/problem/11967))|BLIND|
-|-|진명||BLIND|
+|-|진명|즐거운 단어([BOJ_2922](https://www.acmicpc.net/problem/2922))|BLIND|
 |-|민혁||BLIND|
 |-|준영|K-Queen([BOJ_26006](https://www.acmicpc.net/problem/26006))|BLIND|
 |3주차(2025-10-29)
