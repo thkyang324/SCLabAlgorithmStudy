@@ -69,7 +69,7 @@ git commit -m "BOJ_1000_홍길동_add"
 |2주차(2025-10-22)
 |-|태훈|불켜기([BOJ_11967](https://www.acmicpc.net/problem/11967))|BLIND|
 |-|진명|즐거운 단어([BOJ_2922](https://www.acmicpc.net/problem/2922))|BLIND|
-|-|민혁|이진트리의 직경([LC_543](https://leetcode.com/problems/diameter-of-binary-tree/description/))||BLIND|
+|-|민혁|이진트리의 직경([LC_543](https://leetcode.com/problems/diameter-of-binary-tree/description/))|BLIND|
 |-|준영|K-Queen([BOJ_26006](https://www.acmicpc.net/problem/26006))|BLIND|
 |3주차(2025-10-29)
 |-|태훈||BLIND|
