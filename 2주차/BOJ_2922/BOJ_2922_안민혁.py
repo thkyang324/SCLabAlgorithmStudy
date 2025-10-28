@@ -2,7 +2,15 @@ import sys
 from collections import deque, Counter
 input = sys.stdin.readline
 
-# 즐거운 단어: 모음(A,E,I,O,U) 3개 연속 X, 자음(나머지 알파벳) 3개 연속 X, L을 반드시 포함
+# 문제: 모음(A,E,I,O,U) 3개 연속 X, 자음(나머지 알파벳) 3개 연속 X, L을 반드시 포함 경우의 수?
+
+# 파이썬 + bfs 
+# 아이디어:
+# 순회 무작정 하니 시간초과 뜬다.
+# -> 문제: 알파벳 26개를 모두 leaf로 만들고 조건 검사 -> 반복 연산
+# -> 해결방법: 모음은 '!'로, 자음은 '@'로 대치시켜 leaf로 (dfs 내)
+#             이후 완성 string에서 !, @ 개수 세고 경우의수 계산  (count 함수)
+
 
 vowels = ['A','E','I','O','U','!']
 consonants = [chr(i) for i in range(65, 91) if chr(i) not in vowels]
@@ -57,13 +65,13 @@ def check(word):
     return count
 
 
-def dfs(idx,depth, word):
+def bfs(idx,depth, word):
     count = 0
     queue = deque()
     queue.append((idx, depth, word))
 
     while queue:
-        cur_idx, cur_depth, cur_word = queue.pop()
+        cur_idx, cur_depth, cur_word = queue.popleft()
         if cur_depth == n_blank:
             # cur_word 형식: [L, @, V] [L, !, V], [V, !, @, K] 등
             count += check(cur_word) 
@@ -85,7 +93,7 @@ def dfs(idx,depth, word):
 
     return count
 
-sys.stdout.write(str(dfs(idx_blank[0],0, given_word)))
+sys.stdout.write(str(bfs(idx_blank[0],0, given_word)))
 
     
 
