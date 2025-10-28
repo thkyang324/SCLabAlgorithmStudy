@@ -59,13 +59,13 @@ git commit -m "BOJ_1000_홍길동_add"
 ## 📆 알고리즘 스터디 기록
 
 ### 🐱 주차 별 문제
-
+<!-- 유형 분류 : 구현, 완전탐색, 백트래킹, 시뮬레이션, 깊이우선탐색, 너비우선탐색, 스택, 큐, 정렬, 트리, 그래프, 그래프 탐색, DP, ... -->
 |주차 및 날짜|출제자|문제(문제 번호)|유형|
 |:---:|:---:|:---:|:---:|
 |1주차(2025-10-15)
-|-|태훈|2048 (Easy)([BOJ_12100](https://www.acmicpc.net/problem/12100))|BLIND|
-|-|진명|진우의 민트초코우유([BOJ_20208](https://www.acmicpc.net/problem/20208))|BLIND|
-|-|민혁|Maximal Rectangle([LC_85](https://leetcode.com/problems/maximal-rectangle/description/))|BLIND|
+|-|태훈|2048 (Easy)([BOJ_12100](https://www.acmicpc.net/problem/12100))|구현, 완전탐색, 시뮬레이션, 백트래킹|
+|-|진명|진우의 민트초코우유([BOJ_20208](https://www.acmicpc.net/problem/20208))|완전탐색, 백트래킹|
+|-|민혁|Maximal Rectangle([LC_85](https://leetcode.com/problems/maximal-rectangle/description/))|DP, 스택|
 |2주차(2025-10-22)
 |-|태훈|불켜기([BOJ_11967](https://www.acmicpc.net/problem/11967))|BLIND|
 |-|진명|즐거운 단어([BOJ_2922](https://www.acmicpc.net/problem/2922))|BLIND|
