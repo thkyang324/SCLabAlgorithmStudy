@@ -43,6 +43,7 @@ def main():
             continue
         if not check_check((nr, nc), bqs):
             can_move = True
+            break
     
     if is_check and can_move:
         print("CHECK")
