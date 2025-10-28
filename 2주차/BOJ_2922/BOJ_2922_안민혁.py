@@ -1,50 +1,93 @@
 import sys
+from collections import deque, Counter
 input = sys.stdin.readline
 
-vowels = set("AEIOU")
-s = list(input().strip())
-n = len(s)
+# 즐거운 단어: 모음(A,E,I,O,U) 3개 연속 X, 자음(나머지 알파벳) 3개 연속 X, L을 반드시 포함
 
-# 0=없음(초기),1=모음,2=자음
-def typ(ch):
-    return 1 if ch in vowels else 2
+vowels = ['A','E','I','O','U','!']
+consonants = [chr(i) for i in range(65, 91) if chr(i) not in vowels]
 
-init_hasL = any(ch == 'L' for ch in s)
+given_word = list(input().strip())
+n_words = len(given_word)
 
-# dp[last2][last1][hasL] = count
+n_vowels = len(vowels) # 5
+n_consonants = len(consonants) # 21
+# total = 26
 
-dp = [[[0]*2 for _ in range(3)] for __ in range(3)]
-dp[0][0][1 if init_hasL else 0] = 1
+idx_blank = []
+for i, word in enumerate(given_word):
+    if word == '_':
+        idx_blank.append(i)
+n_blank = len(idx_blank)
+idx_blank += [0]
 
-for i in range(n):
-    ndp = [[[0]*2 for _ in range(3)] for __ in range(3)]
-    ch = s[i]
-    for l2 in range(3):
-        for l1 in range(3):
-            for hasL in (0,1):
-                cur = dp[l2][l1][hasL]
-                if cur == 0:
-                    continue
-                if ch != '_':
-                    t = typ(ch)
-                    if not (l2 == l1 == t and l2 != 0):
-                        nh = hasL or (ch == 'L')
-                        ndp[l1][t][1 if nh else 0] += cur
-                else:
-                    t = 1
-                    if not (l2 == l1 == t and l2 != 0):
-                        ndp[l1][t][hasL] += cur * 5
-                        
-                    t = 2
-                    if not (l2 == l1 == t and l2 != 0):
-                        ndp[l1][t][1] += cur
-                        
-                    if not (l2 == l1 == 2 and l2 != 0):
-                        ndp[l1][2][hasL] += cur * 20
-    dp = ndp
+def check_slide(word, cur_idx):
+    n = len(word)
+    start = max(0, cur_idx - 2)
+    end = min(cur_idx, n - 3)
+    for s in range(start, end + 1):
+        a, b, c = word[s], word[s + 1], word[s + 2]
+        if a == '_' or b == '_' or c == '_':
+            continue
+        ai = a in vowels
+        bi = b in vowels
+        ci = c in vowels 
+        if ai == bi == ci:
+            return False
+    return True
 
-ans = 0
-for l2 in range(3):
-    for l1 in range(3):
-        ans += dp[l2][l1][1]
-sys.stdout.write(str(ans))
+def check(word):
+    count = 0
+    v = 0
+    c = 0
+    counter = dict(Counter(word))
+    if '!' in counter:
+        v = counter['!']
+    if '@' in counter:
+        c = counter['@']
+        
+    if 'L' in counter:
+        count = 5**v * 21**c
+    else: # L 없음
+        if c == 0:
+            return 0
+        else:
+            count = 5**v * (21**c - 20**c)
+
+    return count
+
+
+def dfs(idx,depth, word):
+    count = 0
+    queue = deque()
+    queue.append((idx, depth, word))
+
+    while queue:
+        cur_idx, cur_depth, cur_word = queue.pop()
+        if cur_depth == n_blank:
+            # cur_word 형식: [L, @, V] [L, !, V], [V, !, @, K] 등
+            count += check(cur_word) 
+        else:
+            next_depth = cur_depth + 1 
+            # 모음
+            next_word = cur_word.copy()
+            next_word[cur_idx] = '!'
+            if check_slide(next_word, cur_idx):                
+                queue.append((idx_blank[next_depth], next_depth, next_word))
+
+            # 자음
+            next_word = cur_word.copy()
+            next_word[cur_idx] = '@'
+            if check_slide(next_word, cur_idx):                
+                queue.append((idx_blank[next_depth], next_depth, next_word))
+
+
+
+    return count
+
+sys.stdout.write(str(dfs(idx_blank[0],0, given_word)))
+
+    
+
+
+
