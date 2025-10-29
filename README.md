@@ -75,7 +75,7 @@ git commit -m "BOJ_1000_홍길동_add"
 |-|태훈|회로의 저항([BOJ_24459](https://www.acmicpc.net/problem/24459))|BLIND|
 |-|진명|감시 피하기([BOJ_18428](https://www.acmicpc.net/problem/18428))|BLIND|
 |-|민혁||BLIND|
-|-|준영||BLIND|
+|-|준영|카드 섞기([BOJ_21315](https://www.acmicpc.net/problem/21315))|BLIND|
 |4주차(2025-11-05)
 |-|태훈||BLIND|
 |-|진명||BLIND|
