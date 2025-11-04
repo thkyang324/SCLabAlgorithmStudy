@@ -208,3 +208,6 @@ __marimo__/
 
 # ETC
 .DS_Store
+
+# CPH Judge
+.cph
