@@ -80,7 +80,7 @@ git commit -m "BOJ_1000_홍길동_add"
 |-|태훈||BLIND|
 |-|진명||BLIND|
 |-|민혁||BLIND|
-|-|준영||BLIND|
+|-|준영|카드 섞기([BOJ_21758](https://www.acmicpc.net/problem/21758))|BLIND|
 |5주차(2025-11-12)
 |-|태훈||BLIND|
 |-|진명||BLIND|
@@ -110,3 +110,4 @@ $ git remote add algorithmStudy https://github.com/thkyang324/SCLabAlgorithmStud
 $ git remote -v
 algorithmStudy https://github.com/thkyang324/SCLabAlgorithmStudy (fetch)
 algorithmStudy https://github.com/thkyang324/SCLabAlgorithmStudy (push)
+47
