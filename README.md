@@ -79,7 +79,7 @@ git commit -m "BOJ_1000_홍길동_add"
 |4주차(2025-11-05)
 |-|태훈||BLIND|
 |-|진명||BLIND|
-|-|민혁|톱니바퀴(BOJ_14891)(https://www.acmicpc.net/problem/14891)|BLIND|
+|-|민혁|톱니바퀴([BOJ_14891](https://www.acmicpc.net/problem/14891))|BLIND|
 |-|준영|꿀 따기([BOJ_21758](https://www.acmicpc.net/problem/21758))|BLIND|
 |5주차(2025-11-12)
 |-|태훈||BLIND|
