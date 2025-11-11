@@ -1,6 +1,8 @@
 import sys
 input = sys.stdin.readline
 
+# 누적합 O(N)
+
 N = int(input())
 H = list(map(int, input().split()))
 
