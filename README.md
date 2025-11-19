@@ -77,14 +77,15 @@ git commit -m "BOJ_1000_홍길동_add"
 |-|민혁|구명보트([PG_42835](https://school.programmers.co.kr/learn/courses/30/lessons/42885))|BLIND|
 |-|준영|카드 섞기([BOJ_21315](https://www.acmicpc.net/problem/21315))|BLIND|
 |4주차(2025-11-05)
-|-|태훈||BLIND|
 |-|진명|죽음의 비([BOJ_22944](https://www.acmicpc.net/problem/22944))|BLIND|
 |-|민혁|톱니바퀴([BOJ_14891](https://www.acmicpc.net/problem/14891))|BLIND|
 |-|준영|꿀 따기([BOJ_21758](https://www.acmicpc.net/problem/21758))|BLIND|
 |5주차(2025-11-12)
-|-|태훈||BLIND|
-|-|진명||BLIND|
 |-|민혁|드래곤 커브([BOJ_15685](https://www.acmicpc.net/problem/15685))|BLIND|
+|6주차(2025-11-19)
+|-|태훈|구명보트([PG_214288](https://school.programmers.co.kr/learn/courses/30/lessons/214288))|BLIND|
+|-|진명||BLIND|
+|-|민혁||BLIND|
 |-|준영||BLIND|
 
 ## 💖 참고사항
