@@ -85,7 +85,7 @@ git commit -m "BOJ_1000_홍길동_add"
 |6주차(2025-11-19)
 |-|태훈|구명보트([PG_214288](https://school.programmers.co.kr/learn/courses/30/lessons/214288))|BLIND|
 |-|진명||BLIND|
-|-|민혁||BLIND|
+|-|민혁|마법사 상어와 블리자드([BOJ_21611](https://www.acmicpc.net/problem/21611))|BLIND|
 |-|준영||BLIND|
 
 ## 💖 참고사항
